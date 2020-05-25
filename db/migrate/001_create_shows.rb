@@ -1,5 +1,9 @@
 class 001CreateShows.rb < ActiveRecord::Migration[5.2]
   def change
-    create_table
+    create_table :shows do |t|
+      t.string :name
+      t.string :network
+      t.string
+    end
   end
 end
